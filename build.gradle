@@ -22,26 +22,25 @@ repositories {
 dependencies {
     compile group: 'io.rest-assured', name: 'rest-assured', version: '4.2.0'
     compile group: 'com.jayway.restassured', name: 'json-schema-validator', version: '2.9.0'
-    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.13.3'
+    compile group: 'io.qameta.allure', name: 'allure-junit5', version: '2.0-BETA21'
 
-    testCompile group: 'org.testng', name: 'testng', version: '7.1.0'
-    testCompile 'com.codeborne:selenide:5.12.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    testCompile("org.junit.jupiter:junit-jupiter-params:5.4.2")
 }
 
+
 allure {
-    autoconfigure = true
-    version = '2.4.1'
+    autoconfigure = false
+    version = '2.5.0'
+    configuration = 'implementation'
 }
 
 test {
-    useTestNG() {
-        dependsOn cleanTest
-        useDefaultListeners = true
+    systemProperty 'allure.results.directory', 'build/allure-results'
+    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(1) ?: 1
 
-        suites "src/test/resources/suitesParams.xml"
-        suites "src/test/resources/suitesParamsWithDataProvider.xml"
-        suites "src/test/resources/suitesGUI.xml"
-        suites "src/test/resources/suitesParamsWithListener.xml"
-        suites "src/test/resources/suitesAPI.xml"
-    }
+    useJUnitPlatform()
+    finalizedBy 'allureReport'
 }
+

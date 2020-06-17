@@ -1,1 +1,0 @@
-{"uuid":"0575fb51-bf62-45ae-b99a-80ab88d92d1e","name":"api.TestNG","children":["559a66e4-9a70-4984-9e3f-ffcf3ea0da29"],"befores":[{"name":"response","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1592404868887,"stop":1592404873826}],"afters":[],"links":[],"start":1592404868674,"stop":1592404874196}

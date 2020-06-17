@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Check param" thread-count="2" parallel="methods" >
-    <test name="with Data provider">
-        <classes>
-            <class name="checkParams.paramsWithDataProvider"></class>
-        </classes>
-    </test>
-</suite>

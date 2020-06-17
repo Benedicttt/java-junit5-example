@@ -1,0 +1,258 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "default": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "examples": {
+      "type": "array",
+      "items": {},
+      "additionalItems": false
+    },
+    "required": {
+      "type": "array",
+      "items": {},
+      "additionalItems": false
+    },
+    "additionalProperties": {
+      "type": "boolean"
+    },
+    "properties": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "object",
+          "properties": {
+            "$id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "default": {
+              "type": "integer"
+            },
+            "examples": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "corrected_query": {
+          "type": "object",
+          "properties": {
+            "$id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "default": {
+              "type": "boolean"
+            },
+            "examples": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "page_handle": {
+          "type": "object",
+          "properties": {
+            "$id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "default": {
+              "type": "string"
+            },
+            "examples": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "results": {
+          "type": "object",
+          "properties": {
+            "$id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "default": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            },
+            "examples": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            },
+            "additionalItems": {
+              "type": "boolean"
+            },
+            "items": {
+              "type": "object",
+              "properties": {
+                "anyOf": {
+                  "type": "array",
+                  "items": {},
+                  "additionalItems": false
+                },
+                "$id": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "suggestions": {
+          "type": "object",
+          "properties": {
+            "$id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "default": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            },
+            "examples": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            },
+            "additionalItems": {
+              "type": "boolean"
+            },
+            "items": {
+              "type": "object",
+              "properties": {
+                "anyOf": {
+                  "type": "array",
+                  "items": {},
+                  "additionalItems": false
+                },
+                "$id": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "aggregations": {
+          "type": "object",
+          "properties": {
+            "$id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "default": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            },
+            "examples": {
+              "type": "array",
+              "items": {},
+              "additionalItems": false
+            },
+            "additionalItems": {
+              "type": "boolean"
+            },
+            "items": {
+              "type": "object",
+              "properties": {
+                "anyOf": {
+                  "type": "array",
+                  "items": {},
+                  "additionalItems": false
+                },
+                "$id": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
