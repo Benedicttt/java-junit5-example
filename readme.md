@@ -1,4 +1,4 @@
-###### **Java-Akita example by Sergey Kievskiy**
+###### **Java-JUnit5 example by Sergey Kievskiy**
 
 *****
 **Run command:**
